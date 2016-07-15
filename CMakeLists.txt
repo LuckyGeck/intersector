@@ -1,7 +1,7 @@
 # Created by the script cgal_create_cmake_script_with_options
 # This is the CMake script for compiling a set of CGAL applications.
 
-project(find_intersections)
+project(intersector)
 
 
 cmake_minimum_required(VERSION 2.6.2)
@@ -54,11 +54,11 @@ endif()
 # Creating entries for target: main
 # ############################
 
-add_executable( find_intersections  main.cpp )
+add_executable( intersector  main.cpp )
 
-add_to_cached_list( CGAL_EXECUTABLE_TARGETS find_intersections )
+add_to_cached_list( CGAL_EXECUTABLE_TARGETS intersector )
 
 # Link the executable to CGAL and third-party libraries
-target_link_libraries(find_intersections   ${CGAL_LIBRARIES} ${CGAL_3RD_PARTY_LIBRARIES} )
+target_link_libraries(intersector ${CGAL_LIBRARIES} ${CGAL_3RD_PARTY_LIBRARIES} )
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
