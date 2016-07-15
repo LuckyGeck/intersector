@@ -61,4 +61,4 @@ add_to_cached_list( CGAL_EXECUTABLE_TARGETS intersector )
 # Link the executable to CGAL and third-party libraries
 target_link_libraries(intersector ${CGAL_LIBRARIES} ${CGAL_3RD_PARTY_LIBRARIES} )
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3")
